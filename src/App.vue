@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Quote-Card></Quote-Card>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QuoteCard from './components/quote-card/quote-card.component.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    QuoteCard
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
+
 </style>
