@@ -18,4 +18,8 @@ export default {
 <style>
 @import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
 
+body {
+  background-color: maroon;
+}
+
 </style>
