@@ -7,4 +7,16 @@
             <cite>{{quote.author}}</cite>
         </blockquote>
     </div>
+    <div id="quote-actions">
+        <span id="quote-icons">
+            <span v-for='icon in icons'>
+                <a href="'https://twitter.com/intent/tweet?text=' + quote.quote" target="blank">
+                    <Quote-Icon :className='icon.className'></Quote-Icon>
+                </a>
+            </span>
+            <span id='last-author' v-if='lastAuthor'>Last Author : {{lastAuthor}}</span>
+            <span v-else>No Last Author</span>
+        </span>
+        <button id="quote-button" v-on:click='getQuote()'>{{newQuote}}</button>
+    </div>
 </div>
